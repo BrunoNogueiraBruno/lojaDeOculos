@@ -1,5 +1,6 @@
 # Projeto **Loja de Óculos**
 Clone o repositório com o comando ```git clone git@github.com:BrunoNogueiraBruno/lojaDeOculos.git```
+Crie uma nova *branch* com o comando ```git checkout -b nome-da-branch```
 
 Desenvolva uma *homepage* para uma ótica usando HTML e CSS.
 Faça o mais parecido possível com o *mockup*, prestando atenção às cores e fontes utilizadas.
