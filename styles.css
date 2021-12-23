@@ -1,0 +1,55 @@
+:root {
+ --red: #D01110;
+ --black: #0A0A00;
+ --gray: #A8BBB0;
+ --light-gray: #EBE8E0;
+ --white: #f5f5f5;
+}
+
+@font-face {
+    font-family: 'SairaCondensedRegular';
+    src: url("assets/fonts/SairaCondensed/SairaCondensed-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'SairaCondensedMedium';
+    src: url("assets/fonts/SairaCondensed/SairaCondensed-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'RumRaisinRegular';
+    src: url("assets/fonts/RumRaisin/RumRaisin-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'ShareRegular';
+    src: url("assets/fonts/Share/Share-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'ShareBold';
+    src: url("assets/fonts/Share/Share-Bold.woff2") format("woff2");
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--red) var(--white);
+  }
+  
+  *::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    margin: 16px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+    border-radius: 20px;
+  }
+  
