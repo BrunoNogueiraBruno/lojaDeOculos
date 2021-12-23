@@ -11,21 +11,59 @@
     src: url("assets/fonts/SairaCondensed/SairaCondensed-Regular.woff2") format("woff2");
 }
 
-/* @font-face {
-    font-family: 'SeoulHangang';
-    src: url("assets/fonts/SairaCondensed-Regular.woff2") format("woff2");
-} */
+@font-face {
+    font-family: 'SairaCondensedMedium';
+    src: url("assets/fonts/SairaCondensed/SairaCondensed-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'RumRaisinRegular';
+    src: url("assets/fonts/RumRaisin/RumRaisin-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'ShareRegular';
+    src: url("assets/fonts/Share/Share-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'ShareBold';
+    src: url("assets/fonts/Share/Share-Bold.woff2") format("woff2");
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--red) var(--white);
+  }
+  
+  *::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    margin: 16px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+    border-radius: 20px;
+  }
 
 .background {
     background-image: url("./assets/images/background-image.jpg");
     background-size: cover;
     background-position-y: 40%;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
 .header__container {
-    background: var(--black);
+    background: rgba(0, 0, 0, 0.8);
     color: var(--white);
     height: 10vh;
     display: flex;
@@ -34,8 +72,6 @@
     padding: 0 32px;
     grid-gap: 16px;
     font-family: 'SairaCondensedRegular';
-    font-weight: normal;
-    font-style: normal;
     font-size: 1.5em;
 }
 
@@ -44,11 +80,34 @@
 }
 
 .content__container {
-    height: 65vh;
     display: flex;
+    flex-grow: 1;
     align-items: center;
-    justify-content: flex-end;
-    padding: 0 16px 0 16px;
+    padding: 16px;
+}
+
+.content__text {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.content__text h3 {
+    margin: 0;
+    color: var(--white);
+    font-size: 2.5em;
+    font-family: 'ShareRegular';
+    width: 30vw;
+}
+
+.content__text span {
+    margin: 0;
+    color: var(--red);
+    font-size: 2.5em;
+    font-family: 'ShareBold';
+    width: 30vw;
 }
 
 .banner__container {
@@ -57,17 +116,93 @@
     background-size: cover;
     background-position: center;
     color: var(--white);
-    height: 88%;
+    height: 90%;
     width: 300px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
     border-radius: 8px;
-    padding: 16px;
+    padding: 24px;
+}
+
+.banner__container h1 {
+    font-family: 'SairaCondensedRegular';
+    line-height: .9em;
+    font-size: 4.5em;
+    display: flex;
+    text-align: left;
+}
+
+.banner__title-container h1 {
+    margin: 0;
 }
 
 .banner__content {
     background: var(--red);
     box-shadow: 0 5px 8px 2px rgba(0, 0, 0, 0.25);
+    height: 160px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__content h2 {
+    font-size: 3.5em;
+    font-family: RumRaisinRegular;
+    margin: 0;
+    margin-top: -2%;
+}
+
+.banner__content h3 {
+    font-size: 1.6em;
+    font-family: ShareRegular;
+    margin: 0;
+    width: 80%;
 }
 
 .products-displayer__container {
-    height: 25vh;
+    height: 28vh;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: s;
+    grid-gap: 32px;
+    overflow: auto;
+}
+
+.products-displayer_item {
+    height: 85%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.products-displayer_item:hover {
+    transform: scale(1.1);
+}
+
+.products-displayer__item-image {
+    height: 70%;
+    overflow: hidden;
+    width: 230px;
+}
+
+.products-displayer_item img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: -30%;
+}
+
+.products-displayer_title {
+    font-family: 'SairaCondensedRegular';
+    font-size: 2.5em;
+    color: var(--white);
+    text-align: center;
 }
