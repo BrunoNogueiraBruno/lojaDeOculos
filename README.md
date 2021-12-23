@@ -7,6 +7,7 @@ Desenvolva uma *homepage* para uma ótica usando HTML e CSS.
 Faça o mais parecido possível com o *mockup*, prestando atenção às cores e fontes utilizadas.
  - [MOCKUP](https://www.figma.com/file/kaLBgYzCrMqvDT4nq2ctL6/Untitled?node-id=0%3A1)
  - [PALETA DE CORES](https://www.canva.com/colors/color-palettes/metal-and-glass/)
+ - [DEMONSTRAÇÃO](https://loja-de-oculos.vercel.app/)
 
 ## Parte 1: **HTML**
 ### Crie a estrutura da página contendo:
