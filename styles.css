@@ -1,0 +1,58 @@
+:root {
+ --red: #D01110;
+ --black: #0A0A00;
+ --gray: #A8BBB0;
+ --light-gray: #EBE8E0;
+ --white: #f5f5f5;
+}
+
+@font-face {
+    font-family: 'SairaCondensedRegular';
+    src: url("assets/fonts/SairaCondensed-Regular.woff2") format("woff2");
+}
+
+.background {
+    margin: 0;
+    height: 100vh;
+}
+
+.header__container {
+    background: var(--black);
+    color: var(--white);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 32px;
+    grid-gap: 16px;
+    font-family: 'SairaCondensedRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+.header__logo {
+    height: 40%;
+}
+
+.content__container {
+    background: rgb(167, 167, 167);
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 16px 0 16px;
+}
+
+.banner__container {
+    background: rgb(219, 219, 219);
+    height: 88%;
+    width: 300px;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.products-displayer__container {
+    background: rgb(219, 219, 219);
+    height: 25vh;
+}
